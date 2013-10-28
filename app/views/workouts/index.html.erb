@@ -1,0 +1,20 @@
+<h1>List of workout exercises</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Memory</th>
+  </tr>
+  <% @workouts.each do |workout| %>
+    <tr>
+      <td><%= workout.name %></td>
+      <td><%= workout.typing_system %></td>
+      <td><%= workout.memory_management %></td>
+      <td><%= button_to "X", { action: "destroy", id: workout.id},
+      {method: :delete, data:{confirm: "Are you sure?"}}
+      %></td>
+    </tr>
+
+    </table>
+  <% end %>
