@@ -14,3 +14,8 @@ Workout.create([
 	{name: 'C++', typing_system: 'static', memory_management: 'manual'},
 	{name: 'ObjC', typing_system: 'static', memory_management: 'reference count'}
 	])
+
+User.destroy_all
+
+User.create([
+	{user: 'Email address', password: 'dynamic' password_confirmation: }])
