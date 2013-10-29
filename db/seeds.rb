@@ -18,4 +18,5 @@ Workout.create([
 User.destroy_all
 
 User.create([
-	{user: 'Email address', password: 'dynamic' password_confirmation: }])
+	{user: 'Email address', password: 'dynamic' password_confirmation: 'confirm'}
+	])

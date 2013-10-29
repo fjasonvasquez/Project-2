@@ -5,9 +5,12 @@ Fitness::Application.routes.draw do
  get 'users' => 'users#show'
 
 get 'users/:id' => 'users#create'
-delete 'users/:id' => 'users#update'
 
-post 'users' => 'users#creat'
+delete 'users/:id/edit' => 'users#edit'
+
+post 'users' => 'users#create'
+delete 'users' => 'users#destroy'
+put 'users/:id' => 'users#update'
 
   get 'workouts' => 'workouts#index'
   get 'workouts/new' => 'workouts#new' #shows form to add new workout day
